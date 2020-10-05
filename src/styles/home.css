@@ -12,3 +12,18 @@
     font-size: 3.5rem;
   }
 }
+body {
+  background-color: powderblue;
+}
+
+.titleBox {
+  position: fixed;
+  top: 33%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.landingMsg {
+  width: 79%;
+}

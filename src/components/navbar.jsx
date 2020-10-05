@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="/">
-          Navbar
+          WJL
         </a>
 
         <div className="collapse navbar-collapse" id="navbarNav">

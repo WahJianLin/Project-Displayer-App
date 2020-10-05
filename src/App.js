@@ -10,7 +10,12 @@ import Project from "./components/project";
 import Profile from "./components/profile";
 
 class App extends Component {
-  state = {};
+  state = {
+    color: "#C0C0C0",
+  };
+  componentDidMount() {
+    document.body.style.backgroundColor = "	#C0C0C0";
+  }
   render() {
     return (
       <BrowserRouter>

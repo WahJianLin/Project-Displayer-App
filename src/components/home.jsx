@@ -7,9 +7,17 @@ class Home extends Component {
     return (
       <React.Fragment>
         <main role="main" className="inner cover">
-          <h1 className="cover-heading">Cover your page.</h1>
-          <p className="lead"></p>
-          <p className="lead"></p>
+          <div className="titleBox">
+            <h1 className="cover-heading">WJL Project Displayer</h1>
+            <div className="landingMsg">
+              <br></br>
+              <p className="lead">
+                This is personal project I have been working on utilizing MySQL,
+                Spring Boot, and React. Currently in the middle of uploading the
+                Spring Boot Project to Heroku
+              </p>
+            </div>
+          </div>
         </main>
 
         <footer className="mastfoot mt-auto">

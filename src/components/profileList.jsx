@@ -24,7 +24,7 @@ class ProfileList extends Component {
     }
     return (
       <React.Fragment>
-        <h1>Profiles not loaded</h1>
+        <h1>Heroku backend not set up yet.</h1>
       </React.Fragment>
     );
   }

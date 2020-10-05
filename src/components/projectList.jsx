@@ -23,7 +23,7 @@ class ProjectList extends Component {
     }
     return (
       <React.Fragment>
-        <h1>Projects not loaded</h1>
+        <h1>Heroku backend not set up yet.</h1>
       </React.Fragment>
     );
   }

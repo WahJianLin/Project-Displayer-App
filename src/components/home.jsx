@@ -12,10 +12,10 @@ class Home extends Component {
             <div className="landingMsg">
               <br></br>
               <p className="lead">
-                Hello everyone! My name is Jian LinThis is personal project I
-                have been working on utilizing MySQL, Spring Boot, and React.
-                This project is functionaly done, but I will be working to add
-                to this as practice.
+                Hello everyone! My name is Jian Lin. This is a personal project
+                I have been working on utilizing MySQL, Java Spring Boot, and
+                React. This project is functionaly done, but it is still in
+                development for improvement.
               </p>
             </div>
           </div>

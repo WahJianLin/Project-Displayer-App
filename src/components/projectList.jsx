@@ -4,7 +4,7 @@ import ProjectPanel from "./projectPanel";
 class ProjectList extends Component {
   state = { Projects: [], isLoaded: false };
   componentDidMount() {
-    fetch("http://localhost:8080/project/all/")
+    fetch("https://project-displayer-api.herokuapp.com/project/all/")
       .then((res) => res.json())
       .then((json) => {
         this.setState({ isLoaded: true, Projects: json });
@@ -15,15 +15,28 @@ class ProjectList extends Component {
     if (isLoaded) {
       return (
         <React.Fragment>
-          {Projects.map((target) => (
-            <ProjectPanel key={target.projectId} target={target}></ProjectPanel>
-          ))}
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">Project Name</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Projects.map((target) => (
+                <tr key={target.projectId}>
+                  <td>{target.name}</td>
+                  <td>{target.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </React.Fragment>
       );
     }
     return (
       <React.Fragment>
-        <h1>Heroku backend not set up yet.</h1>
+        <h1>Loading...</h1>
       </React.Fragment>
     );
   }

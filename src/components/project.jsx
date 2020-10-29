@@ -5,7 +5,10 @@ import ProjectLinkPanel from "./projectLinkPanel";
 class Project extends Component {
   state = { item: null, isLoaded: false };
   componentDidMount() {
-    fetch("http://localhost:8080/project/get/" + this.props.match.params.id)
+    fetch(
+      "https://project-displayer-api.herokuapp.com/project/get/" +
+        this.props.match.params.id
+    )
       .then((res) => res.json())
       .then((json) => {
         this.setState({ isLoaded: true, item: json });

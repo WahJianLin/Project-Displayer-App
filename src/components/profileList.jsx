@@ -38,6 +38,10 @@ class ProfileList extends Component {
     return (
       <React.Fragment>
         <h1>Loading...</h1>
+        <p>
+          Please note, this project is utilizing Heroku and Heroku falls to
+          sleep if there is no activity
+        </p>
       </React.Fragment>
     );
   }

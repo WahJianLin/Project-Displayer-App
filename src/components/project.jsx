@@ -36,6 +36,11 @@ class Project extends Component {
     return (
       <React.Fragment>
         <h1>Projects not loaded</h1>
+        <br></br>
+        <p>
+          Please note, this project is utilizing Heroku and Heroku falls to
+          sleep if there is no activity
+        </p>
       </React.Fragment>
     );
   }

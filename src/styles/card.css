@@ -1,0 +1,45 @@
+a {
+  text-decoration: none;
+  font-size: 14px;
+  text-align: right;
+}
+
+.boxhead a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: left;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.card-text {
+  margin: 10px;
+}
+.card-text p {
+  color: grey;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.links {
+  height: 100%;
+}
+
+.related {
+  padding-left: 20px;
+}

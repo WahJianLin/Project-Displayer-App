@@ -1,3 +1,8 @@
+h2 {
+  padding-top: 10px;
+  text-align: center;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -17,13 +22,59 @@ body {
 }
 
 .titleBox {
-  position: fixed;
-  top: 33%;
-  left: 50%;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height: 80%;
+  left: 20%;
+  top: 20%;
+
   /* bring your own prefixes */
-  transform: translate(-50%, -50%);
 }
 
 .landingMsg {
   width: 79%;
+}
+
+.upperSection {
+  width: 100%;
+  height: 60vh;
+  background-color: lightgray;
+}
+.lowerSection {
+  width: 100%;
+  height: 32vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.displayGrid {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 95%;
+  background-color: white;
+  border-style: groove;
+  border-radius: 25px;
+}
+
+.dataSection {
+  padding: 20px;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

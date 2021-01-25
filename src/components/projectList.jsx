@@ -1,36 +1,37 @@
 import React, { Component } from "react";
-import ProjectPanel from "./projectPanel";
+import { allProjects } from "../configs/links";
+import DisplayCard from "./displayCard";
 
 class ProjectList extends Component {
-  state = { Projects: [], isLoaded: false };
+  state = { projects: [], isLoaded: false };
   componentDidMount() {
-    fetch("https://project-displayer-api.herokuapp.com/project/all/")
+    fetch(allProjects)
       .then((res) => res.json())
       .then((json) => {
-        this.setState({ isLoaded: true, Projects: json });
+        this.setState({ isLoaded: true, projects: json });
       });
   }
   render() {
-    var { isLoaded, Projects } = this.state;
+    var { isLoaded, projects } = this.state;
+
     if (isLoaded) {
       return (
         <React.Fragment>
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">Project Name</th>
-                <th scope="col">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Projects.map((target) => (
-                <tr key={target.projectId}>
-                  <td>{target.name}</td>
-                  <td>{target.description}</td>
-                </tr>
+          <h2>Projects</h2>
+          <div className="displayGrid">
+            <div className="grid-container">
+              {projects.map((target) => (
+                <DisplayCard
+                  key={target.projectId}
+                  id={target.projectId}
+                  name={target.name}
+                  description={target.description}
+                  link="/project/"
+                  type="Project"
+                ></DisplayCard>
               ))}
-            </tbody>
-          </table>
+            </div>
+          </div>
         </React.Fragment>
       );
     }

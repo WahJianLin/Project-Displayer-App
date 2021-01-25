@@ -10,7 +10,6 @@ a {
 }
 
 .card {
-  display: grid;
   grid-template-columns: 300px;
   grid-template-rows: 210px 210px 80px;
   border-radius: 18px;

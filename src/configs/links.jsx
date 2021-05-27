@@ -1,5 +1,5 @@
-//export const mainUrl = "http://localhost:5000/";
-export const mainUrl = "https://project-displayer-api.herokuapp.com/";
+export const mainUrl = "http://localhost:5000/";
+//export const mainUrl = "https://project-displayer-api.herokuapp.com/";
 
 //section
 export const profile = mainUrl + "profile/";

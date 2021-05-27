@@ -6,6 +6,9 @@ class DisplayCard extends Component {
     return (
       <React.Fragment>
         <div key={this.props.id} className="card">
+          <div className="img-box">
+            <img className="img-card" src={this.props.img}></img>
+          </div>
           <div className="card-text">
             <h2>{this.props.name}</h2>
           </div>

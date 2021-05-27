@@ -26,6 +26,7 @@ class ProjectList extends Component {
                   id={target.projectId}
                   name={target.name}
                   description={target.description}
+                  img={target.img}
                   link="/project/"
                   type="Project"
                 ></DisplayCard>
